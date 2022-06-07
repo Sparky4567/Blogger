@@ -1,0 +1,18 @@
+{
+  "android": {
+    "debug": {
+      "keystore": "C:/Users/pratu/OneDrive/Desktop/cordova/Blogger/arreader.jks",
+      "storePassword": "andriucha",
+      "alias": "arreader",
+      "password": "andriucha",
+      "keystoreType": "jks"
+    },
+    "release": {
+      "keystore": "C:/Users/pratu/OneDrive/Desktop/cordova/Blogger/arreader.jks",
+      "storePassword": "andriucha",
+      "alias": "arreader",
+      "password": "andriucha",
+      "keystoreType": "jks"
+    }
+  }
+}
