@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Artifact Reader",
+  "short_name": "Artifact Reader",
+  "version": "eu.artefaktas",
+  "description": "Artefaktas Blog Reader",
+  "author": "Artefaktas",
+  "icons": [],
+  "start_url": "index.html"
+}

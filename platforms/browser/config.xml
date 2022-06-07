@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="eu.artefaktas" version="1.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Artifact Reader</name>
+    <description>Artefaktas Blog Reader</description>
+    <author email="admin@artefaktas.eu" href="https://www.artefaktas.eu">
+        Artefaktas
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <hook src="scripts/prebuild.js" type="before_prepare" />
+</widget>

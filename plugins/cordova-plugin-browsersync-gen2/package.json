@@ -1,0 +1,79 @@
+{
+  "name": "cordova-plugin-browsersync-gen2",
+  "id": "cordova-plugin-browsersync-gen2",
+  "version": "1.1.7",
+  "description": "A fork of original Cordova Plugin to integrate browser-sync in the workflow",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Dimitris - Rafail Katsampas",
+    "email": "katsampasdr@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "cordova": {
+    "id": "cordova-plugin-browsersync-gen2",
+    "platforms": [
+      "android",
+      "browser",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimitrisRK/cordova-plugin-browsersync-gen2.git"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "cheerio": "^1.0.0-rc.2",
+    "csp-parse": "0.0.2",
+    "elementtree": "^0.1.6",
+    "glob": "^7.1.2",
+    "plist": "^3.0.0"
+  },
+  "gitHead": "62cbb998e5eb47c6b2143af828f307754fcde491",
+  "bugs": {
+    "url": "https://github.com/DimitrisRK/cordova-plugin-browsersync-gen2/issues"
+  },
+  "homepage": "https://github.com/DimitrisRK/cordova-plugin-browsersync-gen2#readme",
+  "_id": "cordova-plugin-browsersync-gen2@1.1.7",
+  "_nodeVersion": "10.14.2",
+  "_npmVersion": "6.13.0",
+  "dist": {
+    "integrity": "sha512-10shp7zdzoyNLq4oAMWVqPCMVUEZFW8arSKPKq+pAEXIP9+syhFo8v5Lk4FymTHSPq6RuqS+wHX5XRiRn7vERQ==",
+    "shasum": "04b2268417186f9e935facf1458640736fa454b6",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-browsersync-gen2/-/cordova-plugin-browsersync-gen2-1.1.7.tgz",
+    "fileCount": 8,
+    "unpackedSize": 22794,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd2vGrCRA9TVsSAnZWagAANSYP/29mFa2TPM37w857/bYZ\nFaP1eTKM11rjs+d4+AzjHhkM2XcQEDWxmRrvmCNg7r/Nxtp+RMHfEvWyj0v2\naa1IxALviGh5FIEwBXj5MxpY1UshwKFrmeADyeR1J1dJfsV4hE2MjJhdpeYF\nP14EZZoVtZfmWUbM6CxjeAac1r/aWxSt+MqIorU1hRd/bQ8/GOrNfgFny0pg\nq+Nck1xxr7c0p1m32N6lMKoT53v3H0pVso1hLIDzB5d1JPSoTWw2/Hx/Car/\niJEw/YNo443Us/z0zYniV92MP5gcFJw/RQhI/sImXoQieAuIOS2vD3PFw98q\nWgmI5aVNyjere0qNjwyitT/hVcjOwJVbnjVwHhLm2JL56tSucW6IajgfDf2i\nxrc3gLYhci7UHuJxhRxR6n98MUGJ2yc6CQ+A1+icR9+2r9H0561pDOAJqbH3\nJVtbnOYN2f7R22XShTz7WuPkrCtEpEBFNAbGyOck2gRIJ3bhJ7/jrPhDnRCQ\ng/nIsiKp3G6U4Xkb9ObkgVYbZwJRQfth1TYM1Q7M17T6SihEBnTTAiB4LtR6\nvSVoCcNbo4hGNp1vGaM8gvs0n5QnR8GRynUMtUasMF1Z5ZeilADW4hj2X8ZT\n8yZZnpmD0EmIQTtLSiyR+7UcOXbKknoWLXqukVWVSxHI+c0q1qHn50luTtpF\nQh0M\r\n=ZvTu\r\n-----END PGP SIGNATURE-----\r\n",
+    "signatures": [
+      {
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+        "sig": "MEUCIE86Bo3JOweooSx4LG0lkTkuyB5uP0tz0j+i0wnv8htWAiEAz4zPtn+m/p7ZsO1G0yLUXdayDXRoJ5Pbves3J1CP8D8="
+      }
+    ]
+  },
+  "maintainers": [
+    {
+      "name": "dnr",
+      "email": "katsampasdr@gmail.com"
+    }
+  ],
+  "_npmUser": {
+    "name": "dnr",
+    "email": "katsampasdr@gmail.com"
+  },
+  "directories": {},
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-browsersync-gen2_1.1.7_1574629803217_0.522948761921086"
+  },
+  "_hasShrinkwrap": false,
+  "_shasum": "04b2268417186f9e935facf1458640736fa454b6",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-browsersync-gen2/-/cordova-plugin-browsersync-gen2-1.1.7.tgz",
+  "_from": "cordova-plugin-browsersync-gen2@latest"
+}
