@@ -7,6 +7,7 @@
   "scripts": {
     "startcordova": "npx cordova run browser --live-reload",
     "buildandroid": "npx cordova build android --release",
+    "builddebug": "npx cordova build android",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
