@@ -6,6 +6,8 @@ Simple, yet elegant cordova project with ReactJS and Bootstrap material css (Rou
 
 # Commands
 
-- npm start
-- npm build
-- npm run-script buildandroid
+- npm start (react debug)
+- npm build (react build)
+- npm run-script buildandroid (signed app)
+- npm run-script builddebug (unsigned / debug app)
+- npm run-script startcordova (browser version)
