@@ -4,16 +4,16 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MaincComponent from "./components/maincomponent";
 import PostComponent from "./components/postcomponent";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 const renderReactDom = () => {
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(
-    <Router>
+    <HashRouter>
       <Routes>
         <Route exact path="/" element={<MaincComponent />} />
         <Route path="/posts/:id" element={<PostComponent />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 
