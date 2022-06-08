@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import NetworkNavigator from "./navigator";
 class PostComponent extends Component {
   constructor(props) {
     super(props);
@@ -31,6 +31,7 @@ class PostComponent extends Component {
             </Link>
           </div>
         </div>
+        <NetworkNavigator status={window.navigator.onLine} />
       </div>
     );
   }

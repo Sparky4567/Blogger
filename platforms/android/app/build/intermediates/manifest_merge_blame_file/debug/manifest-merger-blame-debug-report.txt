@@ -2,8 +2,8 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="eu.artefaktas"
 4    android:hardwareAccelerated="true"
-5    android:versionCode="10008"
-6    android:versionName="1.0.8" >
+5    android:versionCode="10009"
+6    android:versionName="1.0.9" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="22"

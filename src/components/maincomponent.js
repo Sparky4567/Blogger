@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Aelement from "./aelement";
+import NetworkNavigator from "./navigator";
 class MaincComponent extends Component {
   constructor(props) {
     super(props);
@@ -52,6 +53,7 @@ class MaincComponent extends Component {
               );
             })
           : "Loading..."}
+        <NetworkNavigator status={window.navigator.onLine} />
       </div>
     );
   }

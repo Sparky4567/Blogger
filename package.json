@@ -1,7 +1,7 @@
 {
   "name": "artefaktasreader",
   "displayName": "Artefaktas Reader",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "description": "Artefaktas Reader",
   "main": "index.js",
   "scripts": {
@@ -181,6 +181,7 @@
     "strip-bom": "^3.0.0",
     "strip-final-newline": "^2.0.0",
     "supports-color": "^5.5.0",
+    "sweetalert": "^2.1.2",
     "to-regex-range": "^5.0.1",
     "toidentifier": "^1.0.1",
     "type-is": "^1.6.18",
