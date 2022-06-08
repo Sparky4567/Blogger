@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import MaincComponent from "./components/maincomponent";
 import PostComponent from "./components/postcomponent";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+
 const renderReactDom = () => {
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(

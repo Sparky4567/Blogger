@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { MDBBtn } from "mdb-react-ui-kit";
 class Aelement extends Component {
   constructor(props) {
     super(props);
@@ -16,9 +17,10 @@ class Aelement extends Component {
         }}
         state={{ message: this.post }}
         data-post={this.post}
-        className="btn btn-lg btn-dark postButton"
       >
-        {this.readMoreText}
+        <MDBBtn className="btn btn-lg btn-dark postButton btn-rounded">
+          <i className="fa fa-file"></i> {this.readMoreText}
+        </MDBBtn>
       </Link>
     );
   }
