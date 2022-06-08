@@ -5,6 +5,8 @@ import MaincComponent from "./components/maincomponent";
 import PostComponent from "./components/postcomponent";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import ContactComponent from "./components/contactcomponent";
+import VideoComponent from "./components/videocomponent";
 
 const renderReactDom = () => {
   const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +15,8 @@ const renderReactDom = () => {
       <Routes>
         <Route exact path="/" element={<MaincComponent />} />
         <Route path="/posts/:id" element={<PostComponent />} />
+        <Route exact path="/contacts" element={<ContactComponent />} />
+        <Route exact path="/videos" element={<VideoComponent />} />
       </Routes>
     </HashRouter>
   );

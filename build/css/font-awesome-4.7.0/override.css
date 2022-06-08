@@ -1,0 +1,11 @@
+#postContainer img {
+  max-width: 100%;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+.goog-te-banner-frame {
+  display: none !important;
+}
