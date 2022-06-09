@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import NavComponent from "./navcomponent";
+import NetworkNavigator from "./navigator";
 
-class VideoComponent extends Component {
+class PodcastComponent extends Component {
   constructor(props) {
     super(props);
     this.apiUrl = `https://media.artefaktas.workers.dev/`;
@@ -75,9 +76,10 @@ class VideoComponent extends Component {
           </div>
         </div>
         <NavComponent />
+        <NetworkNavigator />
       </div>
     );
   }
 }
 
-export default VideoComponent;
+export default PodcastComponent;
