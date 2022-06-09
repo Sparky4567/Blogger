@@ -2,6 +2,10 @@
   max-width: 100%;
 }
 
+#postContainer iframe {
+  max-width: 100%;
+}
+
 body {
   top: 0px !important;
   position: static !important;
@@ -16,4 +20,9 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+div[style*="background-color: #1e1e1e;"] {
+  max-width: 100%;
+  overflow-x: scroll;
 }
