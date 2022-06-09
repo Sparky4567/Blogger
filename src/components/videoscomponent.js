@@ -24,9 +24,7 @@ class VideosComponent extends Component {
     }
 
     getData().then((res) => {
-      this.setState({ data: res }, () => {
-        console.log(this.state.data);
-      });
+      this.setState({ data: res });
     });
   }
 
@@ -67,6 +65,9 @@ class VideosComponent extends Component {
                                     style={this.videoStyle}
                                     controls
                                     key={ind}
+                                    poster={
+                                      tweet.extended_entities.media[0].media_url
+                                    }
                                   >
                                     <source src={videoSrc} type={contentType} />
                                     Your browser does not support the video tag.

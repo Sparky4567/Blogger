@@ -13,7 +13,7 @@ class PostComponent extends Component {
 
   render() {
     return (
-      <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center">
+      <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center py-4">
         <div className="card my-4">
           <div className="card-body">
             <h4 className="card-title">{this.message.title.$t}</h4>
