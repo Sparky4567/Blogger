@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
 
@@ -69,7 +70,7 @@ class PodcastComponent extends Component {
                     dangerouslySetInnerHTML={{ __html: this.state.anchor }}
                   ></p>
                 ) : (
-                  ""
+                  <LoadingComponent />
                 )}
               </div>
             </div>
