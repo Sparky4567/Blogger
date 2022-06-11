@@ -6,7 +6,7 @@ import NetworkNavigator from "./navigator";
 class MaincComponent extends Component {
   constructor(props) {
     super(props);
-    this.fetchLink = "https://posts.artefaktas.workers.dev";
+    this.fetchLink = "https://artefaktasnodeserver.herokuapp.com/posts";
     this.homeText = `Sugrįžti į pagrindinį`;
     this.caracLimit = 100;
     this.state = {
@@ -25,7 +25,7 @@ class MaincComponent extends Component {
       return jsonData;
     }
     getData(this.fetchLink).then((dat) => {
-      this.setState({ data: dat["items"] });
+      this.setState({ data: dat });
     });
   }
 

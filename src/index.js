@@ -8,6 +8,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import ContactComponent from "./components/contactcomponent";
 import PodcastComponent from "./components/podcastcomponent";
 import VideosComponent from "./components/videoscomponent";
+import TiktokComponent from "./components/tiktokcomponent";
 
 const renderReactDom = () => {
   const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -19,6 +20,7 @@ const renderReactDom = () => {
         <Route exact path="/contacts" element={<ContactComponent />} />
         <Route exact path="/podcast" element={<PodcastComponent />} />
         <Route exact path="/videos" element={<VideosComponent />} />
+        <Route exact path="/tiktok" element={<TiktokComponent />} />
       </Routes>
     </HashRouter>
   );

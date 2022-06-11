@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NetworkNavigator from "./navigator";
 import NavComponent from "./navcomponent";
+import StartTiktok from "./starttiktok";
 class PostComponent extends Component {
   constructor(props) {
     super(props);
@@ -9,15 +10,6 @@ class PostComponent extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-  }
-
-  tiktokCheck() {
-    if (this.message.content.includes("tiktok.com")) {
-      let el = document.createElement("script");
-      el.src = "https://www.tiktok.com/embed.js";
-      el.defer = "defer";
-      document.body.appendChild(el);
-    }
   }
 
   render() {
@@ -31,10 +23,10 @@ class PostComponent extends Component {
               dangerouslySetInnerHTML={{
                 __html: this.message.content,
               }}
-              onLoad={this.tiktokCheck()}
             ></p>
           </div>
         </div>
+        <StartTiktok />
         <NetworkNavigator status={window.navigator.onLine} />
         <NavComponent />
       </div>

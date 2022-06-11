@@ -33,6 +33,13 @@ class NavComponent extends Component {
           <div className="col-4">
             <Link to={{ pathname: "/videos" }}>
               <MDBBtn className="btn btn-lg btn-light">
+                <i className="fa fa-twitter"></i>
+              </MDBBtn>
+            </Link>
+          </div>
+          <div className="col-4">
+            <Link to={{ pathname: "/tiktok" }}>
+              <MDBBtn className="btn btn-lg btn-light">
                 <i className="fa fa-video-camera"></i>
               </MDBBtn>
             </Link>
