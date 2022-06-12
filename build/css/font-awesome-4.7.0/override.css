@@ -6,6 +6,11 @@
   max-width: 100%;
 }
 
+.card-body blockquote {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
 body {
   top: 0px !important;
   position: static !important;
