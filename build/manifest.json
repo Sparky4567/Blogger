@@ -14,56 +14,6 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "orientation": "portrait",
-  "shortcuts": [
-    {
-      "name": "Blog posts",
-      "url": "/",
-      "description": "Fresh blog posts",
-      "icons": [
-        {
-          "src": "512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ]
-    },
-    {
-      "name": "Podcast",
-      "url": "/#/podcast",
-      "description": "Artefaktas podcast",
-      "icons": [
-        {
-          "src": "512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ]
-    },
-    {
-      "name": "Twitter videos",
-      "url": "/#/videos",
-      "description": "Artefaktas Twitter videos",
-      "icons": [
-        {
-          "src": "512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ]
-    },
-    {
-      "name": "TikTok videos",
-      "url": "/#/tiktok",
-      "description": "Artefaktas TikTok videos",
-      "icons": [
-        {
-          "src": "512.png",
-          "type": "image/png",
-          "sizes": "512x512"
-        }
-      ]
-    }
-  ],
   "screenshots": [
     {
       "src": "512.png",

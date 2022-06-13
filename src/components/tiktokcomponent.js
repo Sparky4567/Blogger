@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
@@ -10,6 +11,7 @@ class TiktokComponent extends Component {
     this.fetchLink = `https://artefaktasnodeserver.herokuapp.com/tiktokvideos`;
     this.state = {
       tiktokdata: null,
+      tiktokloaded: null,
     };
   }
 
@@ -22,13 +24,14 @@ class TiktokComponent extends Component {
     }
 
     fetchTikTok().then((dat) => {
-      this.setState({ tiktokdata: dat });
+      this.setState({ tiktokdata: dat, tiktokloaded: true });
     });
   }
 
   render() {
     return (
       <div>
+        <DesktopNav />
         {this.state.tiktokdata !== null ? (
           this.state.tiktokdata.data !== undefined ? (
             this.state.tiktokdata.data.videos !== undefined ? (
@@ -59,7 +62,7 @@ class TiktokComponent extends Component {
           <LoadingComponent />
         )}
         <NetworkNavigator />
-        <StartTiktok />
+        {this.state.tiktokloaded !== null ? <StartTiktok /> : ""}
         <NavComponent />
       </div>
     );

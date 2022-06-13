@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DesktopNav from "./desktopnav";
 import NavComponent from "./navcomponent";
 
 class ContactComponent extends Component {
@@ -14,6 +15,7 @@ class ContactComponent extends Component {
   render() {
     return (
       <div>
+        <DesktopNav />
         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center">
           <div className="card my-4">
             <div className="card-body">

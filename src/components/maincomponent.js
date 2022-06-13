@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Aelement from "./aelement";
+import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
@@ -32,6 +33,7 @@ class MaincComponent extends Component {
   render() {
     return (
       <div>
+        <DesktopNav />
         {this.state.data !== null && this.state.data !== "" ? (
           this.state.data.map((post, index) => {
             return (

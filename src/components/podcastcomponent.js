@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
@@ -60,6 +61,7 @@ class PodcastComponent extends Component {
   render() {
     return (
       <div>
+        <DesktopNav />
         <div className="row my-4 py-4" key={0}>
           <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center">
             <div className="card my-4">

@@ -11,7 +11,7 @@ class NavComponent extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid d-block d-md-none">
         <div
           style={this.navStyle}
           className="row fixed-bottom py-3 text-center flex-row flex-nowrap scrollable"
