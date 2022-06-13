@@ -15,3 +15,7 @@ Simple, yet elegant cordova project with ReactJS and Bootstrap material css (Rou
 # Important notices
 
 Use HashRouter instead of Browserrouter (this one does not work with Cordova), because HashRouter works with window variable (works with Cordova)
+
+# Working example
+
+https://pwa.artefaktas.eu
