@@ -4,6 +4,7 @@ import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
 import StartTiktok from "./starttiktok";
+import TranslateComponent from "./translatecomponent";
 
 class TiktokComponent extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class TiktokComponent extends Component {
     return (
       <div>
         <DesktopNav />
+        <TranslateComponent />
         {this.state.tiktokdata !== null ? (
           this.state.tiktokdata.data !== undefined ? (
             this.state.tiktokdata.data.videos !== undefined ? (

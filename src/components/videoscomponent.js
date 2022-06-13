@@ -3,6 +3,7 @@ import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
+import TranslateComponent from "./translatecomponent";
 
 class VideosComponent extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class VideosComponent extends Component {
     return (
       <div>
         <DesktopNav />
+        <TranslateComponent />
         {this.state.data !== null ? (
           this.state.data.map((tweet, ind) => {
             if (tweet.extended_entities !== undefined) {

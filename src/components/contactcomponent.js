@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DesktopNav from "./desktopnav";
 import NavComponent from "./navcomponent";
+import TranslateComponent from "./translatecomponent";
 
 class ContactComponent extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class ContactComponent extends Component {
     return (
       <div>
         <DesktopNav />
+        <TranslateComponent />
         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center">
           <div className="card my-4">
             <div className="card-body">

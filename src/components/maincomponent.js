@@ -4,6 +4,7 @@ import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
+import TranslateComponent from "./translatecomponent";
 class MaincComponent extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +35,7 @@ class MaincComponent extends Component {
     return (
       <div>
         <DesktopNav />
+        <TranslateComponent />
         {this.state.data !== null && this.state.data !== "" ? (
           this.state.data.map((post, index) => {
             return (

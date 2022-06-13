@@ -3,6 +3,7 @@ import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
 import NetworkNavigator from "./navigator";
+import TranslateComponent from "./translatecomponent";
 
 class PodcastComponent extends Component {
   constructor(props) {
@@ -62,6 +63,7 @@ class PodcastComponent extends Component {
     return (
       <div>
         <DesktopNav />
+        <TranslateComponent />
         <div className="row my-4 py-4" key={0}>
           <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center">
             <div className="card my-4">
