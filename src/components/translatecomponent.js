@@ -22,7 +22,7 @@ class TranslateComponent extends Component {
         "google_translate_element"
       );
       this.addClass();
-    }, 800);
+    }, 1000);
   }
 
   componentDidMount() {
