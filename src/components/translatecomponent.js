@@ -37,8 +37,10 @@ class TranslateComponent extends Component {
   componentDidMount() {
     let el = document.createElement("script");
     el.src = this.scriptUrl;
+    el.onload = () => {
+      this.googleTranslateElementInit();
+    };
     document.body.appendChild(el);
-    this.googleTranslateElementInit();
   }
 
   render() {
