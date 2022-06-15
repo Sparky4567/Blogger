@@ -28,7 +28,7 @@ class TranslateComponent extends Component {
           }
         });
       }
-    }, 800);
+    }, 1000);
   }
 
   componentDidMount() {
