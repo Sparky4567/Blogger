@@ -20,15 +20,18 @@ class TranslateComponent extends Component {
       if (window.google && window.google.translate !== undefined) {
         this.setState({ loaded: true }, () => {
           if (this.state.loaded === true) {
-            new window.google.translate.TranslateElement(
-              { pageLanguage: "lt" },
-              "google_translate_element"
-            );
-            this.addClass();
+            setTimeout(() => {
+              const p = new window.google.translate.TranslateElement(
+                { pageLanguage: "lt" },
+                "google_translate_element"
+              );
+
+              this.addClass();
+            }, 800);
           }
         });
       }
-    }, 1000);
+    }, 400);
   }
 
   componentDidMount() {

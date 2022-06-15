@@ -4,6 +4,7 @@ import NavComponent from "./navcomponent";
 import StartTiktok from "./starttiktok";
 import DesktopNav from "./desktopnav";
 import TranslateComponent from "./translatecomponent";
+import AdsenseComponent from "./adsense";
 
 class PostComponent extends Component {
   constructor(props) {
@@ -90,6 +91,7 @@ class PostComponent extends Component {
       <div>
         <DesktopNav />
         <TranslateComponent />
+        <AdsenseComponent />
         <div className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center py-4 mb-4">
           <div className="card my-4">
             <div className="card-body">
