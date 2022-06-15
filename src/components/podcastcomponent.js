@@ -23,7 +23,7 @@ class PodcastComponent extends Component {
     this.embedStyle = `width:80%;display:block;margin-left:auto;margin-right:auto;`;
     this.embeLink = `https://anchor.fm/artefaktas/embed`;
     this.rssLink = `https://anchor.fm/s/6a273b60/podcast/rss`;
-    this.imageLink = `https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/17709560/17709560-1630657386733-58d1db57ca9ae.jpg`;
+    this.imageLink = `https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/17709560/17709560-1655277922571-11e7592055fa6.jpg`;
     this.anchorLink = `https://anchor.fm/artefaktas`;
   }
 
