@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Aelement from "./aelement";
+import Banner from "./banner";
 import DesktopNav from "./desktopnav";
 import LoadingComponent from "./loading";
 import NavComponent from "./navcomponent";
@@ -36,10 +37,11 @@ class MaincComponent extends Component {
       <div>
         <DesktopNav />
         <TranslateComponent />
+        <Banner />
         {this.state.data !== null && this.state.data !== "" ? (
           this.state.data.map((post, index) => {
             return (
-              <div className="row my-4 py-4" key={index}>
+              <div className="row my-4" key={index}>
                 <div
                   className="col-lg-10 col-md-10 col-sm-12 col-xs-12 mx-auto align-items-center"
                   key={index}
