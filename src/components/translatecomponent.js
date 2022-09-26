@@ -27,7 +27,7 @@ class TranslateComponent extends Component {
               );
 
               this.addClass();
-            }, 800);
+            }, 1000);
           }
         });
       }
