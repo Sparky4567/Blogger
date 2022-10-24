@@ -9,7 +9,7 @@ import TranslateComponent from "./translatecomponent";
 class TiktokComponent extends Component {
   constructor(props) {
     super(props);
-    this.fetchLink = `https://artefaktasnodeserver.herokuapp.com/tiktokvideos`;
+    this.fetchLink = `https://tiktokapi.artefaktas.workers.dev/api`;
     this.state = {
       tiktokdata: null,
       tiktokloaded: null,

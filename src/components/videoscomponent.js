@@ -36,7 +36,8 @@ class VideosComponent extends Component {
       <div>
         <DesktopNav />
         <TranslateComponent />
-        {this.state.data !== null ? (
+        {this.state.data !== null &&
+        this.state.data?.tweet?.extended_entities?.media[0]?.videos_info ? (
           this.state.data.map((tweet, ind) => {
             if (tweet.extended_entities !== undefined) {
               if (tweet.extended_entities.media !== undefined) {
@@ -87,7 +88,7 @@ class VideosComponent extends Component {
             }
           })
         ) : (
-          <LoadingComponent />
+          <LoadingComponent message="There are no videos at the moment" />
         )}
         <NetworkNavigator />
         <NavComponent />

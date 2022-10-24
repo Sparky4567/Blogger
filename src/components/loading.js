@@ -4,6 +4,7 @@ import NetworkNavigator from "./navigator";
 class LoadingComponent extends Component {
   constructor(props) {
     super(props);
+    this.message = this.props.message;
     this.spinnerStyle = {
       width: 10 + `rem`,
       height: 10 + `rem`,
@@ -16,13 +17,17 @@ class LoadingComponent extends Component {
         <div className="card my-4">
           <div className="card-body">
             <div className="d-flex justify-content-center">
-              <div
-                className="spinner-grow text-warning"
-                style={this.spinnerStyle}
-                role="status"
-              >
-                <span className="visually-hidden">...</span>
-              </div>
+              {this.message !== "undefined" ? (
+                <p>{this.message}</p>
+              ) : (
+                <div
+                  className="spinner-grow text-warning"
+                  style={this.spinnerStyle}
+                  role="status"
+                >
+                  <span className="visually-hidden">...</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
