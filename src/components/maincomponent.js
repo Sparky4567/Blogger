@@ -9,7 +9,7 @@ import TranslateComponent from "./translatecomponent";
 class MaincComponent extends Component {
   constructor(props) {
     super(props);
-    this.fetchLink = "https://artefaktasnodeserver.herokuapp.com/posts";
+    this.fetchLink = "https://posts.artefaktas.workers.dev/";
     this.homeText = `Sugrįžti į pagrindinį`;
     this.caracLimit = 100;
     this.state = {
@@ -25,7 +25,7 @@ class MaincComponent extends Component {
     async function getData(passedParam) {
       const res = await fetch(passedParam);
       const jsonData = await res.json();
-      return jsonData;
+      return jsonData["items"];
     }
     getData(this.fetchLink).then((dat) => {
       this.setState({ data: dat });

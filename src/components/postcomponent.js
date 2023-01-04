@@ -82,8 +82,8 @@ class PostComponent extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.bionicPara();
-    this.bionicDiv();
+    // this.bionicPara();
+    // this.bionicDiv();
   }
 
   render() {
