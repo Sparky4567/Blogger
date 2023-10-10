@@ -5,6 +5,8 @@ import StartTiktok from "./starttiktok";
 import DesktopNav from "./desktopnav";
 import TranslateComponent from "./translatecomponent";
 import AdsenseComponent from "./adsense";
+import { MDBBtn } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 class PostComponent extends Component {
   constructor(props) {
@@ -96,6 +98,13 @@ class PostComponent extends Component {
           <div className="card my-4">
             <div className="card-body">
               <h4 className="card-title my-4">{this.message.title}</h4>
+              <p>
+                <Link to={{ pathname: "/" }}>
+                  <MDBBtn className="btn btn-lg btn-dark">
+                    Atgal į pagrindinį puslapį <i className="fa fa-home"></i>
+                  </MDBBtn>
+                </Link>
+              </p>
               <p
                 className="card-text"
                 dangerouslySetInnerHTML={{

@@ -50,7 +50,7 @@ class DesktopNav extends Component {
                     {this.settings.podcastTitle}
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link" href={this.settings.twitterLink}>
                     {this.settings.twitterTitle}
                   </a>
@@ -59,7 +59,7 @@ class DesktopNav extends Component {
                   <a className="nav-link" href={this.settings.tiktokLink}>
                     {this.settings.tiktokTitle}
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a className="nav-link" href={this.settings.contactsLink}>
                     {this.settings.contactsTitle}
