@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class DesktopNav extends Component {
   constructor(props) {
@@ -8,13 +9,13 @@ class DesktopNav extends Component {
       homePageLink: "/",
       brandTitle: "Artefaktas Reader",
       podcastTitle: "Tinklalaidė",
-      podcastLink: "/#/podcast",
+      podcastLink: "/podcast",
       twitterTitle: "Twitter",
       twitterLink: "/#/videos",
       tiktokTitle: "Tiktok",
       tiktokLink: "/#/tiktok",
       contactsTitle: "Kontaktai",
-      contactsLink: "/#/contacts",
+      contactsLink: "/contacts",
     };
   }
 
@@ -40,15 +41,20 @@ class DesktopNav extends Component {
             <div className="collapse navbar-collapse" id="collapsibleNavId">
               <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item active">
-                  <a className="nav-link" href={this.settings.homePageLink}>
-                    {this.settings.homePageTitle}{" "}
-                    <span className="sr-only">(current)</span>
-                  </a>
+                  <Link
+                    className="nav-link"
+                    to={{ pathname: this.settings.homePageLink }}
+                  >
+                    {this.settings.homePageTitle}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href={this.settings.podcastLink}>
+                  <Link
+                    className="nav-link"
+                    to={{ pathname: this.settings.podcastLink }}
+                  >
                     {this.settings.podcastTitle}
-                  </a>
+                  </Link>
                 </li>
                 {/* <li className="nav-item">
                   <a className="nav-link" href={this.settings.twitterLink}>
@@ -61,9 +67,12 @@ class DesktopNav extends Component {
                   </a>
                 </li> */}
                 <li className="nav-item">
-                  <a className="nav-link" href={this.settings.contactsLink}>
+                  <Link
+                    className="nav-link"
+                    to={{ pathname: this.settings.contactsLink }}
+                  >
                     {this.settings.contactsTitle}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
